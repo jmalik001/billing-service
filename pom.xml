@@ -36,6 +36,18 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+		  <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-ui</artifactId>
+      <version>1.5.7</version>
+   </dependency>
+   
+      <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-security</artifactId>
+      <version>1.5.7</version>
+   </dependency>
+   
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -66,8 +78,8 @@
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-	</dependencies>
+		</dependency>		
+	</dependencies>	
 
 	<build>
 		<plugins>
@@ -82,7 +94,7 @@
 						</exclude>
 					</excludes>
 				</configuration>
-			</plugin>
+			</plugin>		
 		</plugins>
 	</build>
 
