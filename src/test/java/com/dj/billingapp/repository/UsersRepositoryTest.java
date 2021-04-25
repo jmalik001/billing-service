@@ -11,11 +11,13 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.context.annotation.Profile;
+import org.springframework.test.context.ActiveProfiles;
 
 import com.dj.billingapp.entity.User;
 
 @DataJpaTest
-
+@ActiveProfiles("test")
 @DisplayName("Check user interaction to DB")
 class UsersRepositoryTest {
 	
